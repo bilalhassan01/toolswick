@@ -1,0 +1,837 @@
+{
+  "compress-image": [
+    "resize-image",
+    "convert-to-webp",
+    "png-to-jpg"
+  ],
+  "png-to-jpg": [
+    "compress-image",
+    "resize-image",
+    "convert-to-webp"
+  ],
+  "jpg-to-png": [
+    "compress-image",
+    "resize-image",
+    "convert-to-webp"
+  ],
+  "webp-to-jpg": [
+    "compress-image",
+    "resize-image",
+    "jpg-to-png"
+  ],
+  "convert-to-webp": [
+    "compress-image",
+    "resize-image",
+    "webp-to-jpg"
+  ],
+  "resize-image": [
+    "compress-image",
+    "convert-to-webp",
+    "png-to-jpg"
+  ],
+  "compress-pdf": [
+    "pdf-to-text",
+    "pdf-to-image",
+    "merge-pdf"
+  ],
+  "pdf-to-image": [
+    "compress-image",
+    "resize-image",
+    "jpg-to-pdf"
+  ],
+  "merge-pdf": [
+    "split-pdf",
+    "compress-pdf",
+    "pdf-to-text"
+  ],
+  "split-pdf": [
+    "delete-pdf-pages",
+    "compress-pdf",
+    "pdf-to-text"
+  ],
+  "rotate-pdf": [
+    "delete-pdf-pages",
+    "compress-pdf",
+    "pdf-to-text"
+  ],
+  "delete-pdf-pages": [
+    "reorder-pdf",
+    "compress-pdf",
+    "pdf-to-text"
+  ],
+  "jpg-to-pdf": [
+    "merge-pdf",
+    "compress-pdf",
+    "pdf-to-text"
+  ],
+  "percentage-calculator": [
+    "loan-calculator",
+    "bmi-calculator",
+    "age-calculator"
+  ],
+  "age-calculator": [
+    "percentage-calculator",
+    "bmi-calculator",
+    "loan-calculator"
+  ],
+  "bmi-calculator": [
+    "age-calculator",
+    "percentage-calculator",
+    "loan-calculator"
+  ],
+  "loan-calculator": [
+    "percentage-calculator",
+    "bmi-calculator",
+    "age-calculator"
+  ],
+  "svg-to-png": [
+    "resize-image",
+    "compress-image",
+    "png-to-jpg"
+  ],
+  "base64-tool": [
+    "json-formatter",
+    "svg-to-png",
+    "qr-code-generator"
+  ],
+  "remove-exif": [
+    "compress-image",
+    "png-to-jpg",
+    "resize-image"
+  ],
+  "word-counter": [
+    "json-formatter",
+    "base64-tool",
+    "qr-code-generator"
+  ],
+  "json-formatter": [
+    "base64-tool",
+    "word-counter",
+    "qr-code-generator"
+  ],
+  "qr-code-generator": [
+    "svg-to-png",
+    "base64-tool",
+    "json-formatter"
+  ],
+  "text-case-converter": [
+    "word-counter",
+    "text-tools",
+    "find-replace"
+  ],
+  "text-tools": [
+    "text-case-converter",
+    "text-compare",
+    "word-counter"
+  ],
+  "find-replace": [
+    "text-tools",
+    "text-case-converter",
+    "extract-emails"
+  ],
+  "text-compare": [
+    "text-tools",
+    "word-counter",
+    "markdown-editor"
+  ],
+  "lorem-ipsum": [
+    "word-counter",
+    "slug-generator",
+    "markdown-editor"
+  ],
+  "slug-generator": [
+    "text-case-converter",
+    "word-counter",
+    "text-tools"
+  ],
+  "markdown-editor": [
+    "word-counter",
+    "text-compare",
+    "text-tools"
+  ],
+  "extract-emails": [
+    "find-replace",
+    "text-tools",
+    "word-counter"
+  ],
+  "morse-code": [
+    "text-case-converter",
+    "text-tools",
+    "word-counter"
+  ],
+  "word-frequency": [
+    "word-counter",
+    "text-tools",
+    "find-replace"
+  ],
+  "binary-text": [
+    "number-converter",
+    "text-case-converter",
+    "text-tools"
+  ],
+  "html-text-converter": [
+    "html-encoder",
+    "markdown-editor",
+    "text-tools"
+  ],
+  "url-encoder": [
+    "html-encoder",
+    "base64-tool",
+    "slug-generator"
+  ],
+  "html-encoder": [
+    "html-text-converter",
+    "url-encoder",
+    "markdown-editor"
+  ],
+  "csv-json": [
+    "json-formatter",
+    "xml-formatter",
+    "sql-formatter"
+  ],
+  "xml-formatter": [
+    "json-formatter",
+    "html-text-converter",
+    "sql-formatter"
+  ],
+  "sql-formatter": [
+    "json-formatter",
+    "xml-formatter",
+    "csv-json"
+  ],
+  "regex-tester": [
+    "find-replace",
+    "extract-emails",
+    "text-tools"
+  ],
+  "password-generator": [
+    "uuid-generator",
+    "hash-generator",
+    "jwt-decoder"
+  ],
+  "uuid-generator": [
+    "password-generator",
+    "hash-generator",
+    "timestamp-converter"
+  ],
+  "hash-generator": [
+    "password-generator",
+    "uuid-generator",
+    "jwt-decoder"
+  ],
+  "jwt-decoder": [
+    "base64-tool",
+    "json-formatter",
+    "hash-generator"
+  ],
+  "timestamp-converter": [
+    "cron-generator",
+    "number-converter",
+    "jwt-decoder"
+  ],
+  "cron-generator": [
+    "timestamp-converter",
+    "regex-tester",
+    "sql-formatter"
+  ],
+  "json-to-typescript": [
+    "json-formatter",
+    "csv-json",
+    "sql-formatter"
+  ],
+  "color-converter": [
+    "css-gradient",
+    "css-box-shadow",
+    "svg-to-png"
+  ],
+  "css-gradient": [
+    "css-box-shadow",
+    "color-converter",
+    "svg-to-png"
+  ],
+  "css-box-shadow": [
+    "css-gradient",
+    "color-converter",
+    "svg-to-png"
+  ],
+  "number-converter": [
+    "binary-text",
+    "hash-generator",
+    "timestamp-converter"
+  ],
+  "length-converter": [
+    "weight-converter",
+    "area-converter",
+    "speed-converter"
+  ],
+  "weight-converter": [
+    "length-converter",
+    "volume-converter",
+    "bmi-calculator"
+  ],
+  "temperature-converter": [
+    "length-converter",
+    "energy-converter",
+    "pressure-converter"
+  ],
+  "area-converter": [
+    "length-converter",
+    "volume-converter",
+    "ratio-calculator"
+  ],
+  "volume-converter": [
+    "length-converter",
+    "weight-converter",
+    "fuel-calculator"
+  ],
+  "speed-converter": [
+    "length-converter",
+    "time-converter",
+    "fuel-calculator"
+  ],
+  "data-converter": [
+    "number-converter",
+    "base64-tool",
+    "hash-generator"
+  ],
+  "time-converter": [
+    "date-calculator",
+    "stopwatch",
+    "world-clock"
+  ],
+  "pressure-converter": [
+    "temperature-converter",
+    "energy-converter",
+    "volume-converter"
+  ],
+  "energy-converter": [
+    "temperature-converter",
+    "pressure-converter",
+    "fuel-calculator"
+  ],
+  "angle-converter": [
+    "ratio-calculator",
+    "speed-converter",
+    "length-converter"
+  ],
+  "discount-calculator": [
+    "tax-calculator",
+    "percentage-calculator",
+    "salary-calculator"
+  ],
+  "tax-calculator": [
+    "discount-calculator",
+    "percentage-calculator",
+    "salary-calculator"
+  ],
+  "interest-calculator": [
+    "mortgage-calculator",
+    "salary-calculator",
+    "percentage-calculator"
+  ],
+  "fuel-calculator": [
+    "speed-converter",
+    "length-converter",
+    "salary-calculator"
+  ],
+  "salary-calculator": [
+    "interest-calculator",
+    "tax-calculator",
+    "discount-calculator"
+  ],
+  "mortgage-calculator": [
+    "interest-calculator",
+    "loan-calculator",
+    "salary-calculator"
+  ],
+  "date-calculator": [
+    "time-converter",
+    "age-calculator",
+    "world-clock"
+  ],
+  "ratio-calculator": [
+    "percentage-calculator",
+    "resize-image",
+    "area-converter"
+  ],
+  "gpa-calculator": [
+    "percentage-calculator",
+    "grade-calculator",
+    "statistics-calculator"
+  ],
+  "world-clock": [
+    "date-calculator",
+    "stopwatch",
+    "time-converter"
+  ],
+  "stopwatch": [
+    "time-converter",
+    "date-calculator",
+    "world-clock"
+  ],
+  "crop-image": [
+    "resize-image",
+    "compress-image",
+    "convert-to-webp"
+  ],
+  "rotate-image": [
+    "crop-image",
+    "resize-image",
+    "compress-image"
+  ],
+  "watermark-image": [
+    "compress-image",
+    "resize-image",
+    "convert-to-webp"
+  ],
+  "exif-viewer": [
+    "remove-exif",
+    "compress-image",
+    "resize-image"
+  ],
+  "image-base64": [
+    "favicon-generator",
+    "svg-to-png",
+    "compress-image"
+  ],
+  "color-picker": [
+    "image-effects",
+    "color-converter",
+    "favicon-generator"
+  ],
+  "favicon-generator": [
+    "resize-image",
+    "compress-image",
+    "image-base64"
+  ],
+  "photo-collage": [
+    "compress-image",
+    "social-media-resizer",
+    "resize-image"
+  ],
+  "meme-generator": [
+    "add-text-image",
+    "watermark-image",
+    "compress-image"
+  ],
+  "social-media-resizer": [
+    "compress-image",
+    "convert-to-webp",
+    "photo-collage"
+  ],
+  "image-effects": [
+    "watermark-image",
+    "compress-image",
+    "resize-image"
+  ],
+  "image-info": [
+    "exif-viewer",
+    "compress-image",
+    "resize-image"
+  ],
+  "passport-photo": [
+    "crop-image",
+    "resize-image",
+    "compress-image"
+  ],
+  "add-text-image": [
+    "watermark-image",
+    "meme-generator",
+    "compress-image"
+  ],
+  "reorder-pdf": [
+    "pdf-page-numbers",
+    "compress-pdf",
+    "pdf-to-text"
+  ],
+  "pdf-page-numbers": [
+    "pdf-watermark",
+    "compress-pdf",
+    "pdf-to-text"
+  ],
+  "pdf-watermark": [
+    "compress-pdf",
+    "pdf-to-text",
+    "pdf-to-image"
+  ],
+  "pdf-info": [
+    "pdf-to-text",
+    "split-pdf",
+    "compress-pdf"
+  ],
+  "pdf-text": [
+    "pdf-to-text",
+    "pdf-watermark",
+    "compress-pdf"
+  ],
+  "pdf-crop": [
+    "pdf-watermark",
+    "compress-pdf",
+    "pdf-to-text"
+  ],
+  "pdf-to-text": [
+    "word-counter",
+    "pdf-text",
+    "pdf-info"
+  ],
+  "file-info": [
+    "csv-viewer",
+    "data-uri",
+    "gzip-tool"
+  ],
+  "csv-viewer": [
+    "tsv-csv",
+    "file-info",
+    "json-formatter"
+  ],
+  "tsv-csv": [
+    "csv-viewer",
+    "file-info",
+    "data-uri"
+  ],
+  "gzip-tool": [
+    "file-info",
+    "data-uri",
+    "csv-viewer"
+  ],
+  "data-uri": [
+    "file-info",
+    "base64-tool",
+    "svg-to-png"
+  ],
+  "barcode-generator": [
+    "qr-code-generator",
+    "data-uri",
+    "file-info"
+  ],
+  "invoice-generator": [
+    "receipt-generator",
+    "resume-builder",
+    "business-card"
+  ],
+  "receipt-generator": [
+    "invoice-generator",
+    "business-card",
+    "resume-builder"
+  ],
+  "resume-builder": [
+    "business-card",
+    "invoice-generator",
+    "certificate-maker"
+  ],
+  "business-card": [
+    "resume-builder",
+    "signature-maker",
+    "social-post-maker"
+  ],
+  "certificate-maker": [
+    "resume-builder",
+    "business-card",
+    "signature-maker"
+  ],
+  "signature-maker": [
+    "pdf-text",
+    "pdf-watermark",
+    "business-card"
+  ],
+  "social-post-maker": [
+    "og-image-maker",
+    "business-card",
+    "meme-generator"
+  ],
+  "og-image-maker": [
+    "social-post-maker",
+    "search-preview",
+    "meta-tags-generator"
+  ],
+  "search-preview": [
+    "keyword-density",
+    "meta-tags-generator",
+    "robots-generator"
+  ],
+  "keyword-density": [
+    "search-preview",
+    "word-counter",
+    "word-frequency"
+  ],
+  "robots-generator": [
+    "sitemap-generator",
+    "search-preview",
+    "meta-tags-generator"
+  ],
+  "sitemap-generator": [
+    "robots-generator",
+    "search-preview",
+    "meta-tags-generator"
+  ],
+  "meta-tags-generator": [
+    "search-preview",
+    "og-image-maker",
+    "robots-generator"
+  ],
+  "html-formatter": [
+    "css-formatter",
+    "json-formatter",
+    "markdown-editor"
+  ],
+  "css-formatter": [
+    "html-formatter",
+    "css-gradient",
+    "css-box-shadow"
+  ],
+  "json-tree-viewer": [
+    "json-formatter",
+    "csv-json",
+    "json-to-typescript"
+  ],
+  "tip-calculator": [
+    "split-bill-calculator",
+    "vat-calculator",
+    "discount-calculator"
+  ],
+  "split-bill-calculator": [
+    "tip-calculator",
+    "vat-calculator",
+    "percentage-calculator"
+  ],
+  "vat-calculator": [
+    "tip-calculator",
+    "discount-calculator",
+    "percentage-calculator"
+  ],
+  "grade-calculator": [
+    "percentage-calculator",
+    "gpa-calculator",
+    "statistics-calculator"
+  ],
+  "timezone-converter": [
+    "timestamp-converter",
+    "countdown-timer",
+    "alarm-clock"
+  ],
+  "countdown-timer": [
+    "pomodoro-timer",
+    "alarm-clock",
+    "timezone-converter"
+  ],
+  "wifi-qr-code-generator": [
+    "qr-code-generator",
+    "password-generator",
+    "password-strength-checker"
+  ],
+  "resize-multiple-images": [
+    "compress-multiple-images",
+    "convert-multiple-images",
+    "resize-image"
+  ],
+  "convert-multiple-images": [
+    "compress-multiple-images",
+    "resize-multiple-images",
+    "png-to-jpg"
+  ],
+  "compress-multiple-images": [
+    "resize-multiple-images",
+    "convert-multiple-images",
+    "compress-image"
+  ],
+  "duplicate-pdf-pages": [
+    "reorder-pdf",
+    "compress-pdf",
+    "pdf-to-text"
+  ],
+  "scientific-calculator": [
+    "fraction-calculator",
+    "statistics-calculator",
+    "percentage-calculator"
+  ],
+  "random-number-generator": [
+    "random-picker",
+    "dice-roller",
+    "coin-flip"
+  ],
+  "pomodoro-timer": [
+    "countdown-timer",
+    "alarm-clock",
+    "timezone-converter"
+  ],
+  "text-to-speech": [
+    "audio-cutter",
+    "tone-generator",
+    "metronome"
+  ],
+  "random-picker": [
+    "random-name-generator",
+    "random-number-generator",
+    "dice-roller"
+  ],
+  "dice-roller": [
+    "coin-flip",
+    "random-number-generator",
+    "random-picker"
+  ],
+  "coin-flip": [
+    "dice-roller",
+    "random-picker",
+    "random-number-generator"
+  ],
+  "calorie-calculator": [
+    "bmi-calculator",
+    "body-fat-calculator",
+    "sleep-calculator"
+  ],
+  "typing-speed-test": [
+    "reaction-time-test",
+    "click-speed-test",
+    "word-counter"
+  ],
+  "body-fat-calculator": [
+    "bmi-calculator",
+    "calorie-calculator",
+    "weight-converter"
+  ],
+  "sleep-calculator": [
+    "alarm-clock",
+    "pomodoro-timer",
+    "countdown-timer"
+  ],
+  "pregnancy-calculator": [
+    "period-tracker",
+    "age-calculator",
+    "date-calculator"
+  ],
+  "fraction-calculator": [
+    "percentage-calculator",
+    "scientific-calculator",
+    "statistics-calculator"
+  ],
+  "speed-distance-time": [
+    "speed-converter",
+    "length-converter",
+    "time-converter"
+  ],
+  "investment-calculator": [
+    "interest-calculator",
+    "retirement-calculator",
+    "loan-calculator"
+  ],
+  "retirement-calculator": [
+    "investment-calculator",
+    "interest-calculator",
+    "loan-calculator"
+  ],
+  "zakat-calculator": [
+    "percentage-calculator",
+    "investment-calculator",
+    "split-bill-calculator"
+  ],
+  "electricity-bill-calculator": [
+    "energy-converter",
+    "percentage-calculator",
+    "vat-calculator"
+  ],
+  "statistics-calculator": [
+    "scientific-calculator",
+    "grade-calculator",
+    "percentage-calculator"
+  ],
+  "number-to-words": [
+    "invoice-generator",
+    "receipt-generator",
+    "binary-text"
+  ],
+  "reaction-time-test": [
+    "click-speed-test",
+    "typing-speed-test",
+    "stopwatch"
+  ],
+  "click-speed-test": [
+    "reaction-time-test",
+    "typing-speed-test",
+    "stopwatch"
+  ],
+  "password-strength-checker": [
+    "password-generator",
+    "hash-generator",
+    "uuid-generator"
+  ],
+  "random-name-generator": [
+    "random-picker",
+    "lorem-ipsum",
+    "uuid-generator"
+  ],
+  "love-calculator": [
+    "random-picker",
+    "coin-flip",
+    "dice-roller"
+  ],
+  "text-repeater": [
+    "word-counter",
+    "text-tools",
+    "text-case-converter"
+  ],
+  "alarm-clock": [
+    "stopwatch",
+    "countdown-timer",
+    "pomodoro-timer"
+  ],
+  "metronome": [
+    "tone-generator",
+    "text-to-speech",
+    "audio-cutter"
+  ],
+  "tone-generator": [
+    "metronome",
+    "audio-cutter",
+    "alarm-clock"
+  ],
+  "audio-cutter": [
+    "text-to-speech",
+    "tone-generator",
+    "metronome"
+  ],
+  "webp-to-png": [
+    "compress-image",
+    "resize-image",
+    "png-to-jpg"
+  ],
+  "merge-images": [
+    "photo-collage",
+    "compress-image",
+    "resize-image"
+  ],
+  "color-contrast-checker": [
+    "color-palette-generator",
+    "color-picker",
+    "color-converter"
+  ],
+  "color-palette-generator": [
+    "color-contrast-checker",
+    "color-picker",
+    "color-converter"
+  ],
+  "period-tracker": [
+    "pregnancy-calculator",
+    "sleep-calculator",
+    "calorie-calculator"
+  ],
+  "power-converter": [
+    "energy-converter",
+    "electricity-bill-calculator",
+    "speed-converter"
+  ],
+  "frequency-converter": [
+    "power-converter",
+    "energy-converter",
+    "tone-generator"
+  ],
+  "gif-maker": [
+    "resize-image",
+    "compress-image",
+    "photo-collage"
+  ],
+  "equation-solver": [
+    "scientific-calculator",
+    "percentage-calculator",
+    "grade-calculator"
+  ]
+}

@@ -1,0 +1,18 @@
+# Build output and local artefacts
+dist/
+__pycache__/
+*.pyc
+*.pyo
+
+# Dependencies
+node_modules/
+
+# OS artefacts
+.DS_Store
+Thumbs.db
+
+# Editor artefacts
+.vscode/
+.idea/
+*.swp
+*.swo
